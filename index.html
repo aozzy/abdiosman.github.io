@@ -5,10 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
+  <!-- <link rel="stylesheet" href="main.css"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,800&display=swap"
     rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
   <title>Portfolio</title>
 </head>
 
@@ -34,7 +45,7 @@
   <!-- end header -->
   <!-- hero section -->
   <section id="hero">
-    <div class="hero container">
+    <div class="hero content">
       <div>
         <h1>Abdi Osman<span></span></h1>
         <h2>Software Developer<span></span></h2>
@@ -47,7 +58,7 @@
   <!-- end hero section -->
   <!-- Service section -->
   <section id="about">
-    <div class="about container">
+    <div class="about content">
 
       <div class="col-left">
         <div class="about-img">
@@ -57,7 +68,7 @@
       </div>
 
       <div class="col-right">
-        <h3 class="section-title"> About</h3>
+        <h3 class="section-title" id="section-about"> About</h3>
         <h4> Full Stack Developer</h4>
         <p>I am a keen tech enthusiast with experience in cloud computing, IT and infrastructure support and I’m now seeking to develop my career in the Software development industry.
           To enhance my skills in Software development, I have completed the Software Engineering Immersive course at General Assembly. I continually try to develop my skill set by keeping abreast of new Technology. I’m currently looking for a Junior developer role as a front end or full stack engineer.
@@ -273,13 +284,53 @@
         </div>
      
       </div>
+      <div class="skills-box">
+        <div class="skill-title">
+          <div class="skill-img">
+            <img src="https://img.icons8.com/color/48/000000/nextjs.png"/>
+          
+          </div>
+          <h4>Nextjs</h4>
+        </div>
+     
+      </div>
+      <div class="skills-box">
+        <div class="skill-title">
+          <div class="skill-img">
+            <img src="https://img.icons8.com/ios-filled/50/000000/django.png"/>
+          
+          </div>
+          <h4>Django</h4>
+        </div>
+     
+      </div>
+      <div class="skills-box">
+        <div class="skill-title">
+          <div class="skill-img">
+            <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-sql-computer-programming-flaticons-lineal-color-flat-icons.png"/>
+          
+          </div>
+          <h4>SQL</h4>
+        </div>
+     
+      </div>
+      <div class="skills-box">
+        <div class="skill-title">
+          <div class="skill-img">
+            <img src="https://img.icons8.com/ios-filled/50/000000/redux.png"/>
+          
+          </div>
+          <h4>Redux</h4>
+        </div>
+     
+      </div>
       </div>
     </div>
   </section>
 
   <section id="services">
 
-    <div class="services container">
+    <div class="services content">
       <div class="service-top">
         <h3 class="section-title">Experience</h3>
         <p>To enhance my skills in Software development, I enrolled onto and completed the Software Engineering Immersive course at General Assembly.
@@ -330,11 +381,178 @@
 
 
     <section id="projects">
-      <div class="projects container">
+      <div class="projects content">
         <div class="projects-header">
           <h3 class="section-title">Projects</h3>
         </div>
-        <div class="all-projects"></div>
+        <div class="container">
+      
+          <div id="slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slider" data-slide-to="0" class="active"></li>
+              <li data-target="#slider" data-slide-to="1"></li>
+              <li data-target="#slider" data-slide-to="2"></li>
+              <li data-target="#slider" data-slide-to="3"></li>
+              <li data-target="#slider" data-slide-to="4"></li>
+              <li data-target="#slider" data-slide-to="5"></li>
+            </ol>
+    
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div>
+                      <h3>Project 1</h3>
+                      <p>
+                        Project 1 for the General Assembly Software Immersive
+                        course. This was my first project during my time at General
+                        Assembly, It was a solo project and the duration was a week,
+                        the technologies I used are HTML CSS and JavaScript. <a href="https://aozzy.github.io/project-1/">Link</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <img
+                      src="images/snake.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div>
+                      <h3>Project 2</h3>
+                      <p>
+                        Project 2 was a pair programming project in which we had to
+                        build a React application that consumes a public API, the
+                        technologies we used were React Node.js React Router Webpack
+                        Axios React Player Bulma Babel Google Fonts Git GitHub
+                        Lodash Sass and VScode Live Share. <a
+                          href="https://aozzy.github.io/project-2/"
+                          >Link</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <img src="./images/breakingbad.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div>
+                      <h3>Project 3</h3>
+                      <p>
+                        For the third project we were tasked as a group to build a
+                        full-stack application by making our own backend and
+                        front-end and to use an Express API to serve data from a
+                        Mongo database. We built a travel site. Technologies we used
+                        include Express MongoDB Mongoose React Node.js JWT Bcrypt
+                        Axios GitHub Git Bulma MapboxGL Supertest Chai and Mocha.<a
+                          href="https://project-cityscapes.herokuapp.com/"
+                        >
+                          Link</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <img src="images/cityscapes.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div>
+                      <h3>Project 4</h3>
+                      <p>
+                        For the final project of the General Assembly Software
+                        Immersive Course we were tasked as a group to build a full
+                        stack application with a Python Flask back-end. The duration
+                        of the project was a week. After exchanging ideas for the
+                        project we choose to develop Baggle, The idea behind Baggle
+                        came from the story of Kyle McDonald who went from owning a
+                        paper clip to a house in 14 trades. Technologies we used
+                        include React Python PostgreSQL Flask Marshmallow &
+                        SQLalchemy Git & GitHub Bulma Webpack Heroku Insomnia
+                        Tableplus and Babel. <a
+                          href="https://gabaggle.herokuapp.com/"
+                          >Link</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <img src="images/Homepage.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div>
+                      <h3>Solo Project</h3>
+    
+                      <p>
+                        YelpCamp is a full stack application, it was built in 2
+                        weeks. The app displays campgrounds from all over the world,
+                        users are able to login register and add campgrounds as well
+                        as commenting on campgrounds. I used Express as a backend
+                        and ejs to render templates on the frontend. The following
+                        technologies were used Express MongoDB Mongoose ejs
+                        cloudinary passport for authentication Mapbox and
+                        sanitize-html to prevent xss vulnerabilities. <a href="https://afternoon-stream-05401.herokuapp.com/">Link</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <img src="images/yelpcamp.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div>
+                      <h3>Solo Project</h3>
+                      <p>
+                        Blog central is a full stack application I built in a week.
+                        The app utilises full Crud capabilities,users are able to
+                        login/register and post blog content. I used Python Flask as
+                        a backend and rendered html templates using Jinja2.
+                        Technologies used include flask_bootstrap flask_ckeditor
+                        flask_sqlalchemy flask wtforms flask_gravatar
+                        werkzeug.security and Postgresql database. <a href="https://blog-central00.herokuapp.com">Link</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <img src="images/blogcentral.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <!-- carousel inner ends here --->
+            <!-- left and right contols--->
+            <a href="#slider" class="left carousel-control" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">previous</span>
+            </a>
+            <a href="#slider" class="right carousel-control" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">next</span>
+            </a>
+            <!-- <a href="#slider" class="right carousel-control" data-slide="next"></a> -->
+          </div>
+          <!-- carousel ends here --->
+        </div>
+        <!-- <div class="all-projects"></div>
         <div class="class project-item">
           <div class="class project-info">
             <h3> Project 1</h3>
@@ -383,7 +601,7 @@
           <div class="class project-img">
             <img src="./images/Homepage.png" alt="image" />
           </div>
-        </div>
+        </div> -->
       </div>
       </div>
     </section>
@@ -404,7 +622,7 @@
     <!-- start contact section -->
 
     <section id="contact">
-      <div class="contact container">
+      <div class="contact content">
      
           <h4 class="section-title">Contact</h4>
         
@@ -416,13 +634,13 @@
               <h5><a href="mailto:abdiosman090@gmail.com">abdiosman090@gmail.com</a></h5>
             </div>
           </div>
-          <div class="contact-item">
+          <!-- <div class="contact-item">
             <div class="icon"><img src="https://img.icons8.com/color/48/000000/android.png" /> </div>
             <div class="contact-info">
               <h4>Phone</h4>
-              <!-- <h5><a href="tel:+447947964493">+447947964493</a></h5> -->
+             
             </div>
-          </div>
+          </div> -->
           <div class="contact-item">
             <div class="icon"><img src="https://img.icons8.com/color/48/000000/linkedin.png" /> </div>
             <div class="contact-info">
@@ -452,7 +670,7 @@
 
     <!-- footer -->
    <section id="footer">
-     <div class="footer container">
+     <div class="footer content">
 
       <div class="brand">
 
